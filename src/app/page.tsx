@@ -1,13 +1,13 @@
 import Hero from "@/components/Hero";
-import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+import Navbar from "@/components/Navbar";
 
 
 
 export default function Home() {
   return (
     <>
-    <BackgroundRippleEffect />
-    <Hero />
+      <Navbar />
+      <Hero />
     </>
   );
 }
