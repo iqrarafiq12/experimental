@@ -12,11 +12,11 @@ export default function Navbar() {
   return (
     <>
       {/* Top Navbar */}
-      <nav className="fixed top-4 left-0 w-full z-50 bg-background">
+      <nav className="fixed top-4 left-0 w-full z-50">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4 relative">
 
           {/* Logo - HIDE when menu is open */}
-          {!isOpen && (
+
             <Link href="/" className="flex items-center gap-3 cursor-none">
               <Image
                 src="./logo.svg"
@@ -25,12 +25,11 @@ export default function Navbar() {
                 height={100}
               />
             </Link>
-          )}
 
           {/* Hamburger / Close Button - STAYS in same position */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 rounded-base hover:bg-neutral-tertiary focus:outline-none absolute right-4 top-4"
+            className="p-2 rounded-base hover:bg-neutral-tertiary focus:outline-none absolute right-4 top-4 "
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {/* Hamburger */}
@@ -54,7 +53,7 @@ export default function Navbar() {
 
       {/* FULL SCREEN MENU */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-neutral-secondary-soft flex items-center justify-center">
+        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/80">
           <ul className="space-y-8 text-3xl font-semibold text-center">
             <li>
               <Link

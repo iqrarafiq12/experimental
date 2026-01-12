@@ -1,6 +1,34 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Root theme values (single theme only) */
+:root {
+  --radius: 0.625rem;
+
+  --background: #000103;
+  --foreground: #fffffa;
+
+  --primary: #EAE4D5;
+  --primary-foreground: #fffffa;
+
+  --secondary: #111827;
+  --secondary-foreground: #ffffff;
+
+  --muted: #080E1A;
+  --muted-foreground: #fffffa;
+
+  --accent: #FF312E;
+  --accent-foreground: #fffffa;
+
+  --destructive: #333138;
+
+  --card: #020617;
+  --card-foreground: #ffffff;
+
+  --popover: #020617;
+  --popover-foreground: #ffffff;
+}
+
 /* Inline theme tokens */
 @theme inline {
   --color-background: var(--background);
@@ -32,60 +60,21 @@
 
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
 
-  /* Charts */
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
+  @keyframes cell-ripple {
+    0% {
+      opacity: 0.4;
+    }
 
-  /* Radius */
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
-}
+    50% {
+      opacity: 0.8;
+    }
 
-/* Root theme values (single theme only) */
-:root {
-  --radius: 0.625rem;
-
-  --background: #000103;
-  --foreground: #fffffa;
-
-  --border: #1f2933;
-  --input: #1f2933;
-  --ring: #3b82f6;
-
-  --primary: #3b82f6;
-  --primary-foreground: #ffffff;
-
-  --secondary: #111827;
-  --secondary-foreground: #ffffff;
-
-  --muted: #0f172a;
-  --muted-foreground: #9ca3af;
-
-  --accent: #1e40af;
-  --accent-foreground: #ffffff;
-
-  --destructive: #ef4444;
-
-  --card: #020617;
-  --card-foreground: #ffffff;
-
-  --popover: #020617;
-  --popover-foreground: #ffffff;
-
-  --chart-1: #3b82f6;
-  --chart-2: #22c55e;
-  --chart-3: #f97316;
-  --chart-4: #a855f7;
-  --chart-5: #ec4899;
+    100% {
+      opacity: 0.4;
+    }
+  }
 }
 
 /* Base layer */
