@@ -11,39 +11,36 @@ export default function Hero() {
         <section className="relative flex flex-col items-center text-foreground px-4 sm:px-6 lg:px-8 pt-28 pb-24 overflow-hidden">
             {/* Background */}
 
-            {/* Badge with sliding accent */}
+          {/* Badge with sliding accent */}
+  <div className="relative flex w-[260px] items-center border border-slate-500 rounded-full p-1 text-sm">
 
-            <div className="relative mt-6">
-                <div className="relative flex w-[260px] items-center border border-slate-500 rounded-full p-1 text-sm">
+    {/* Sliding background */}
+    <span
+      className={`absolute top-1 bottom-1 w-1/2 rounded-full
+        bg-[#FF312E]
+        transition-transform duration-300 ease-in-out
+        transform-gpu will-change-transform
+        ${active === "work" ? "translate-x-0" : "translate-x-full"}
+      `}
+    />
 
-                    {/* Sliding background */}
-                    <span
-                        className={`absolute top-1 bottom-1 w-1/2 rounded-full bg-accent transition-transform duration-300 ease-in-out ${active === "work" ? "translate-x-0" : "translate-x-full"
-                            }`}
-                    />
+    <Link
+      href="/contact"
+      onClick={() => setActive("work")}
+      className="relative z-10 w-1/2 text-center py-2 text-xs font-semibold text-white"
+    >
+      Work With Us
+    </Link>
 
-                    {/* Link 1 */}
-                    <Link
-                        href="/contact" // 🔗 change to your route
-                        onClick={() => setActive("work")}
-                        className={`relative z-10 w-1/2 text-center py-2 text-xs font-semibold transition-colors ${active === "work" ? "text-white" : "text-white"
-                            }`}
-                    >
-                        Work With Us
-                    </Link>
+    <Link
+      href="/services"
+      onClick={() => setActive("services")}
+      className="relative z-10 w-1/2 text-center py-2 text-xs font-semibold text-white"
+    >
+      View Our Services
+    </Link>
 
-                    {/* Link 2 */}
-                    <Link
-                        href="/services" // 🔗 change to your route
-                        onClick={() => setActive("services")}
-                        className={`relative z-10 w-1/2 text-center py-2 text-xs font-semibold transition-colors ${active === "services" ? "text-white" : "text-white"
-                            }`}
-                    >
-                        View Our Services
-                    </Link>
-
-                </div>
-            </div>
+  </div>
             {/* Hero Heading */}
             <h1 className="text-center font-semibold mt-8 max-w-5xl text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-[1.2] lg:text-6xl lg:leading-[1.15]">
                 A Creative Studio Building Brands Through Design & Technology
@@ -54,5 +51,7 @@ export default function Hero() {
                 We solve creative problems today to build creative products tomorrow. EDAQAI CREATIVES helps brands, businesses and startups grow through design, marketing visuals, and digital experiences.
             </p>
         </section>
+
+        
     );
 }

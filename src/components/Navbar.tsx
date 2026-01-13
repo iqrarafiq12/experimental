@@ -12,8 +12,8 @@ export default function Navbar() {
   return (
     <>
       {/* Top Navbar */}
-      <nav className="fixed top-4 left-0 w-full z-50">
-        <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4 relative">
+      <nav className="fixed top-4 left-0 w-full z-20">
+        <div className="max-w-screen-xl mx-auto flex items-center justify-between p-2 relative">
 
           {/* Logo - HIDE when menu is open */}
 

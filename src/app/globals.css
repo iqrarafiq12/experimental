@@ -1,86 +1,72 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Root theme values (single theme only) */
+/* ===============================
+   SINGLE BRAND THEME (ALWAYS DARK)
+   =============================== */
 :root {
   --radius: 0.625rem;
 
   --background: #000103;
-  --foreground: #fffffa;
+  --foreground: #FFFFFA;
 
-  --primary: #EAE4D5;
-  --primary-foreground: #fffffa;
+  --primary: #FF312E;
+  --primary-foreground: #FFFFFA;
 
-  --secondary: #111827;
-  --secondary-foreground: #ffffff;
+  --secondary: #393E46;
+  --secondary-foreground: #FFFFFA;
 
-  --muted: #080E1A;
-  --muted-foreground: #fffffa;
+  --muted: #333138;
+  --muted-foreground: #515052;
 
-  --accent: #FF312E;
-  --accent-foreground: #fffffa;
+  --accent: #FC0A71;
+  --accent-foreground: #FFFFFA;
 
-  --destructive: #333138;
+  --card: #000103;
+  --card-foreground: #FFFFFA;
 
-  --card: #020617;
-  --card-foreground: #ffffff;
+  --popover: #000103;
+  --popover-foreground: #FFFFFA;
 
-  --popover: #020617;
-  --popover-foreground: #ffffff;
+  --border: #333138;
+  --input: #333138;
+  --ring: #FF312E;
+
+  --chart-1: #FF312E;
+  --chart-2: #88304E;
+  --chart-3: #FC0A71;
+  --chart-4: #493E2C;
+  --chart-5: #EAE4D5;
+
+  --sidebar: #000103;
+  --sidebar-foreground: #FFFFFA;
+  --sidebar-primary: #FF312E;
+  --sidebar-primary-foreground: #FFFFFA;
+  --sidebar-accent: #393E46;
+  --sidebar-accent-foreground: #FFFFFA;
+  --sidebar-border: #333138;
+  --sidebar-ring: #FF312E;
 }
 
-/* Inline theme tokens */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-
-  --color-destructive: var(--destructive);
-
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
-
-  @keyframes cell-ripple {
-    0% {
-      opacity: 0.4;
-    }
-
-    50% {
-      opacity: 0.8;
-    }
-
-    100% {
-      opacity: 0.4;
-    }
-  }
 }
 
-/* Base layer */
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
 
   body {
