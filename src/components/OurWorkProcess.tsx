@@ -69,7 +69,7 @@ export default function OurWorkProcess() {
         {/* 01 ONE CARD  */}
         <Card className="col-span-1 sm:col-span-2 lg:col-span-3 bg-zinc-900/50 border-zinc-800">
           <CardContent className="p-6 space-y-6">
-            <div className="flex justify-left cursor-pointer gap-4 items-center">
+            <div className="flex justify-left cursor-pointer gap-3 items-left">
               <CompanyLogo name="RETAIL" />
               <CompanyLogo name="STARTUPS" />
               <CompanyLogo name="DIGITAL BRANDS" />
