@@ -17,7 +17,7 @@
   --secondary-foreground: #FFFFFA;
 
   --muted: #333138;
-  --muted-foreground: #515052;
+  --muted-foreground: #6f6e70;
 
   --accent: #FC0A71;
   --accent-foreground: #FFFFFA;
@@ -72,4 +72,14 @@
   body {
     @apply bg-background text-foreground;
   }
+  .no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 }

@@ -61,9 +61,21 @@ const InvestmentInterface = () => {
   );
 };
 
-export default function OurWorkProcess() {
+export default function StudioSnapshot() {
   return (
     <div className="w-full p-4 sm:p-6 text-white">
+      <div className="space-y-4 mb-8">
+
+        <h1 className="mb-4 text-center font-bold md:text-2xl font-medium">
+          PROOF OF INTENT, NOT NOISE
+        </h1>
+        <p className="text-center text-sm text-muted-foreground">
+          We focus on meaningful work, not inflated numbers.
+        </p>
+      </div>
+
+
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6">
 
         {/* 01 ONE CARD  */}

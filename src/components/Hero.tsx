@@ -41,6 +41,7 @@ export default function Hero() {
     </Link>
 
   </div>
+
             {/* Hero Heading */}
             <h1 className="text-center font-semibold mt-8 max-w-5xl text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-[1.2] lg:text-6xl lg:leading-[1.15]">
                 A Creative Studio Building Brands Through Design & Technology
