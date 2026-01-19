@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Linkedin,Email } from "@deemlol/next-icons";
+import { Instagram, Email } from "@deemlol/next-icons";
 import { FaBehance } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 

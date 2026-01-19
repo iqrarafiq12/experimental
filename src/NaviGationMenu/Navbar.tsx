@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full z-50">
+      <nav className="fixed top-0 left-0 w-full z-50 mt-3">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between relative">
 
           {/* LOGO (hidden visually only) */}
