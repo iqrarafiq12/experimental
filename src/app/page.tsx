@@ -5,6 +5,8 @@ import StudioSnapshot from "@/components/StudioSnapshot";
 import Footer from "@/components/Footer";
 import OurGallery from "@/components/OurGallery";
 import Services from "../components/services";
+import Project from "@/components/ProjectsSection";
+
 
 
 
@@ -15,7 +17,9 @@ export default function Home() {
         <Navbar />
         <Hero />
         <StudioSnapshot />
-      <Services />
+        <Services />
+
+        <Project />
         {/* <TestimonialsMarquee /> */}
         <OurGallery />
         <Footer />
