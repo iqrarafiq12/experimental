@@ -66,11 +66,11 @@ export default function StudioSnapshot() {
     <div className="w-full p-4 sm:p-6 text-white">
       <div className="space-y-4 mb-8">
 
-        <h1 className="mb-4 text-center font-bold md:text-2xl font-medium">
-          PROOF OF INTENT, NOT NOISE
+        <h1 className="text-[42px] font-semibold text-center tracking-tight text-[var(--foreground)]">
+          Studio Snapshot
         </h1>
-        <p className="text-center text-sm text-muted-foreground">
-          We focus on meaningful work, not inflated numbers.
+        <p className="text-center text-sm leading-relaxed text-[var(--muted-foreground)]">
+          where proof of intent, not noise We focus on meaningful work, not inflated numbers.
         </p>
       </div>
 

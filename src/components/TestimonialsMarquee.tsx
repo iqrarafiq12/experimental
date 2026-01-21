@@ -108,7 +108,7 @@ export default function TestimonialsMarquee() {
   return (
     <>
       {/* ROW 1 */}
-      <div className="marquee-row w-full mx-auto max-w-7xl overflow-hidden relative mt-15">
+      <div className="marquee-row w-full mx-auto max-w-7xl overflow-hidden relative">
         <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-background to-transparent" />
 
         <div className="marquee-inner flex transform-gpu min-w-[200%] pt-10 pb-5">

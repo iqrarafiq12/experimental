@@ -5,7 +5,7 @@ import { FaBehance } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { LuArrowUpRight } from "react-icons/lu";
 import { Instagram } from "@deemlol/next-icons";
-import { FaPinterest } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
 /* ===================== SOCIAL LINKS ===================== */
 const socialLinks = [
@@ -25,9 +25,9 @@ const socialLinks = [
     href: "https://instagram.com/edaqai.creatives",
   },
   {
-    name: "Pinterest",
-    icon: FaPinterest,
-    href: "https://www.pinterest.com/edaqaicreatives/",
+    name: "Tiktok",
+    icon: FaTiktok,
+    href: "https://www.tiktok.com/@edaqai.creatives",
   },
 ];
 

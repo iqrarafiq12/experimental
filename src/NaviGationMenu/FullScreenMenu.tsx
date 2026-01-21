@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Email } from "@deemlol/next-icons";
-import { FaBehance } from "react-icons/fa";
+import { Instagram } from "@deemlol/next-icons";
+import { FaBehance, FaTiktok } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
 type Props = {
@@ -67,7 +67,7 @@ export default function FullScreenMenu({ isOpen, onClose }: Props) {
               <SocialLink href="https://www.instagram.com/edaqai.creatives/" icon={<Instagram size={25} />} />
               <SocialLink href="https://www.linkedin.com/company/edaqaicreatives" icon={<FaLinkedin size={25} />} />
               <SocialLink href="https://www.behance.net/edaqaicreatives" icon={<FaBehance size={25} />} />
-              <SocialLink href="mailto:workwithedaqai@gmail.com" icon={<Email size={25} />} />
+              <SocialLink href="https://www.tiktok.com/@edaqai.creatives" icon={<FaTiktok size={25} />} />
             </div>
 
             {/* Footer */}
