@@ -4,10 +4,7 @@ import StudioSnapshot from "@/components/StudioSnapshot";
 // import TestimonialsMarquee from "@/components/TestimonialsMarquee";
 import Footer from "@/components/Footer";
 import OurGallery from "@/components/OurGallery";
-
-
-
-
+import ServicesCarousel from "@/components/OurServices/ServicesExperience";
 
 
 export default function Home() {
@@ -17,10 +14,11 @@ export default function Home() {
         <Navbar />
         <Hero />
         <StudioSnapshot />
+        <ServicesCarousel />
         {/* <TestimonialsMarquee /> */}
         <OurGallery />
         <Footer />
-         <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent blur-3xl" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent blur-3xl" />
       </div>
     </>
   );
