@@ -3,19 +3,22 @@ import StudioSnapshot from "@/components/StudioSnapshot";
 // import TestimonialsMarquee from "@/components/TestimonialsMarquee";
 import OurGallery from "@/components/OurGallery";
 import Services from "../components/services";
-import Project from "@/components/ProjectsSection";
 
-
+import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+import { GlobeCard } from "@/components/GlobeCard";
+import { HowWeWork } from "@/components/HowWeWork";
 
 
 export default function Home() {
   return (
     <>
       <div className="w-full max-w-screen-xl mx-auto justify-center relative">
+        <BackgroundRippleEffect />
         <Hero />
         <StudioSnapshot />
+        <GlobeCard />
         <Services />
-        <Project />
+        <HowWeWork />
         {/* <TestimonialsMarquee /> */}
         <OurGallery />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent blur-3xl" />

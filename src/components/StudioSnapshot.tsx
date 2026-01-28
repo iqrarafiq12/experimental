@@ -64,7 +64,7 @@ const InvestmentInterface = () => {
 export default function StudioSnapshot() {
   return (
     <div className="w-full p-4 sm:p-6 text-white">
-      <div className="space-y-4 mb-8">
+      {/* <div className="space-y-4 mb-8">
 
         <h1 className="text-[42px] font-semibold text-center tracking-tight text-[var(--foreground)]">
           Studio Snapshot
@@ -72,11 +72,9 @@ export default function StudioSnapshot() {
         <p className="text-center text-sm leading-relaxed text-[var(--muted-foreground)]">
           where proof of intent, not noise We focus on meaningful work, not inflated numbers.
         </p>
-      </div>
+      </div> */}
 
-
-
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6">
+      <div className="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6">
 
         {/* 01 ONE CARD  */}
         <Card className="col-span-1 sm:col-span-2 lg:col-span-3 bg-zinc-900/50 border-zinc-800">

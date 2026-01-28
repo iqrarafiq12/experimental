@@ -4,11 +4,11 @@ import { services } from "./Data/Services";
 
 export default function Services() {
   return (
-    <section className="relative overflow-hidden bg-[var(--background)] px-6 py-28 mt-10">
+    <section className="relative w-full h-full overflow-hidden bg-[var(--background)] px-6 py-28 mt-10">
       {/* Accent Glow */}
-      <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-[var(--accent)]/25 blur-[160px]" />
+      <div className="absolute right-10 top-0 h-[500px] w-[500px] rounded-full bg-[var(--accent)]/25 blur-[160px]" />
 
-      <div className="relative mx-auto max-w-7xl">
+      <div className="relative mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-24 max-w-xl">
           <h2 className="text-[42px] font-semibold tracking-tight text-[var(--foreground)]">

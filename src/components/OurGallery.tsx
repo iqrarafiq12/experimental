@@ -13,7 +13,7 @@ const instagramPosts: InstaPost[] = [
   { id: 2, image: "/IG-Post-02.jpg", url: "https://www.instagram.com/p/DTkbBGpjRZI/" },
   { id: 3, image: "/IG-Post-03.jpg", url: "https://www.instagram.com/p/DTn40M8Dc4r/" },
   { id: 4, image: "/IG-Post-04.png", url: "https://www.instagram.com/p/DTxFAVjDf7V/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" },
-  { id: 5, image: "/IG-Post-03.jpg", url: "https://www.instagram.com/" },
+  { id: 5, image: "/IG-Post-05.png", url: "https://www.instagram.com/p/DT87pXgiAnn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
   { id: 6, image: "/IG-Post-01.jpg", url: "https://www.instagram.com/" },
 ];
 
